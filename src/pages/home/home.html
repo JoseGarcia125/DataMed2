@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding id="fondo">
+  <h3>DataMed</h3>
+  <br>
+  <h2>Bienvenido</h2>
+  <h2>Necesita iniciar sesion para continuar</h2>
+  <ion-item id="email">
+    <ion-label floating>Email</ion-label>
+    <ion-input type="text" [(ngModel)]="user.email"></ion-input>
+  </ion-item>
+
+  <ion-item id="password">
+    <ion-label floating>Password</ion-label>
+    <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+  </ion-item>
+<br>
+<br>
+<br>
+  <button ion-button block outline (click)="login()" id="boton" color="white">Iniciar Sesion</button>
+  <h3>No tiene cuenta? Puede registrarse   <a href="register.html">  Aqui</a></h3>
+</ion-content>
